@@ -13,8 +13,23 @@ export function SiteHeader() {
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
+          <Link
+              href={"mailto:do.sidorin@gmail.com"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "sm",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.mail className="h-5 w-5" />
+                <span className="sr-only">Email</span>
+              </div>
+            </Link>
             <Link
-              href={siteConfig.links.github}
+              href={"https://github.com/asdsoulja/website"}
               target="_blank"
               rel="noreferrer"
             >
@@ -29,7 +44,7 @@ export function SiteHeader() {
               </div>
             </Link>
             <Link
-              href={siteConfig.links.twitter}
+              href={"https://instagram.com/asdsoulja"}
               target="_blank"
               rel="noreferrer"
             >
@@ -39,8 +54,8 @@ export function SiteHeader() {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 fill-current" />
-                <span className="sr-only">Twitter</span>
+                <Icons.instagram className="h-5 w-5 fill-none" />
+                <span className="sr-only">Instagram</span>
               </div>
             </Link>
             <ThemeToggle />
