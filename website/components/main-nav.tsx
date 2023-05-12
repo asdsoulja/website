@@ -13,10 +13,10 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href="/" className="flex items-center space-x-2 md:flex">
+      <Link href="/" className="flex items-center min-w-min space-x-2 md:flex">
         <Icons.logo2 className="h-2 w-2" />
-        <span className="font-bold w-fit text-sm">
-          Dmitrii Sidorin
+        <span className="font-bold min-w text-sm">
+          {siteConfig.name}
         </span>
       </Link>
       {items?.length ? (
