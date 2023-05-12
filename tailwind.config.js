@@ -79,6 +79,46 @@ module.exports = {
             transform: "translateY(0px)",
           },
         },
+        slideLeftEnter: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(20px)",
+          },
+          "100%": {
+            opacity: 100,
+            transform: "translateX(0px)",
+          },
+        },
+        slideRightEnter: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(-20px)",
+          },
+          "100%": {
+            opacity: 100,
+            transform: "translateX(0px)",
+          },
+        },
+        slideDownEnter: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-100px)",
+          },
+          "100%": {
+            opacity: 100,
+            transform: "translateY(0px)",
+          },
+        },
+        slideAwayUp: {
+          "0%": {
+            opacity: 100,
+            transform: "translateY(40px)",
+          },
+          "100%": {
+            opacity: 0,
+            transform: "translateY(-30px)",
+          },
+        },
         progress: {
           '0%, 60%': {
             transform: 'translateY(0px)'
@@ -244,7 +284,15 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         'spin-slow': 'spin 3s linear infinite',
         'name-right': 'name 0.5s ease-out',
-        slideUpEnter: "slideUpEnter .3s ease-in-out",
+        slideUpEnter1s: "slideUpEnter 1s ease-in-out",
+        slideDownEnter1s: "slideDownEnter 1s ease-in-out",
+        slideLeftEnter1s: "slideLeftEnter 1s ease-in-out",
+        slideRightEnter1s: "slideRightEnter 1s ease-in-out",
+        slideUpEnterQuick: "slideUpEnter 1s ease-in-out",
+        slideDownEnterQuick: "slideDownEnter 1s ease-in-out",
+        slideLeftEnterQuick: "slideLeftEnter 1s ease-in-out",
+        slideRightEnterQuick: "slideRightEnter 1s ease-in-out",
+        slideAwayUp: "slideAwayUp 25s 1 normal forwards",
         "progress": 'progress 1s linear infinite',
         "three-bounce": 'three-bounce 1s ease-in-out infinite',
         "circle": 'circle 2s ease-in-out infinite',
