@@ -33,9 +33,21 @@ export default function IndexPage() {
     <div className="flex h-auto px-60">
       <WelcomeText/>
     </div>
-    <div className="pt-40 px-5 h-auto align-super relative select-none w-screen transition ease-in-out delay-50 hover:skew-y-1 hover:skew-x-2 hover:-translate-y-2 hover:-translate-x-5 hover:scale-95">
-      <Bio />
-    </div>
+    <section className=" animate-slideUpEnterQuick">
+      <div className="self-stretch rotate-180 fill-foreground translate-y-0.5">
+        <Curves.second />
+      </div>
+      <section className=" bg-foreground">
+        <div className= "px-5 text-background h-auto align-super relative select-none w-screen transition ease-in-out delay-50 hover:skew-y-1 hover:skew-x-2 hover:-translate-y-2 hover:-translate-x-5 hover:scale-95 bg-fixed">
+          <Bio />
+        </div>
+        <h1>
+
+
+          d
+        </h1>
+      </section>
+    </section>
     </>
   )
 }
