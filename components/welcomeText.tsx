@@ -15,11 +15,11 @@ export default function WelcomeText() {
        */
       animate={{
         scale: [1, 1, 1, 1.02, 1],
-        rotate: [0, -0.5, 0.5, 0.3, 0],
+        rotate: [0, -0.8, 0.7, -0.3, 0],
         borderRadius: ["50%", "50%", "50%", "50%", "50%"]
       }}
       transition={{
-        duration: 3,
+        duration: 10,
         ease: "easeInOut",
         times: [0, 0.2, 0.5, 0.8, 1],
         repeat: Infinity,

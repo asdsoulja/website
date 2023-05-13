@@ -33,7 +33,7 @@ export default function IndexPage() {
     <div className="flex h-auto px-60">
       <WelcomeText/>
     </div>
-    <div className="pt-40 px-5 h-auto max-w-fit align-super relative select-none">
+    <div className="pt-40 px-5 h-auto align-super relative select-none w-screen transition ease-in-out delay-50 hover:skew-y-1 hover:skew-x-2 hover:-translate-y-2 hover:-translate-x-5 hover:scale-95">
       <Bio />
     </div>
     </>

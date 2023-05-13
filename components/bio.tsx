@@ -7,6 +7,7 @@ import { Avatar } from "@/components/ui/avatar"
 export default function Bio() {
     return (
         <>
+        <div className="flex-col relative max-w-[980px] sm:text-3xl md:text-5xl lg:text-6xl grid sm:-translate-x-32 sm:scale-50 md:-translate-x-32 md:scale-50 lg:scale-75 lg:translate-x-36 xl:scale-100 xl:translate-x-96">
             <motion.div
                 className="box"
                 /**
@@ -25,13 +26,14 @@ export default function Bio() {
                     repeat: Infinity,
                     repeatDelay: 0
                 }}>
-                <div className="flex-auto pl-96 h-auto max-w-fit text-lg pt-2 pb-20 grid items-start gap-6 flex-col relative select-none to-background -skew-x-5 justify-end bg-transparent slide-in-from-right-20 max-h-fit pointer-events-none animate-slideRightEnterQuickDelayed opacity-0 pr-3">
+                <div className="flex-auto h-auto max-w-fit text-lg pt-2 pb-20 grid items-start gap-6 flex-col relative select-none to-background -skew-x-5 justify-start bg-transparent slide-in-from-right-20 sm:-translate-x-10 md:max-h-fit pointer-events-none animate-slideRightEnterQuickDelayed opacity-0 pr-3">
                     <Avatar className="scale-[6.00] border-x-blue-400 border-spacing-3 border">
                         <AvatarImage src="https://sun9-8.userapi.com/impg/NDCLPweyJa7W13XCod7rXO6QEcUc8cuG0ngZ0g/D314q3lU4ac.jpg?size=2560x2560&quality=95&sign=c4e9e3667dd26045863948a8d6734a53&type=album" />
                         <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
                 </div>
-            </motion.div><motion.div
+            </motion.div>
+            <motion.div
                 className="box"
                 /**
                  * Setting the initial keyframe to "null" will use
@@ -49,7 +51,7 @@ export default function Bio() {
                     repeat: Infinity,
                     repeatDelay: 0
                 }}>
-                    <div className="flex-auto max-w-fit h-auto pl-96 text-lg py-10 grid items-end gap-6 flex-col relative select-none to-background -skew-x-3 translate-x-96">
+                    <div className="flex-auto max-w-fit h-auto text-lg py-10 grid items-end gap-6 flex-col relative select-none to-background -skew-x-3 translate-x-96">
                         <h2 className="text-end text-2xl font-light animate-slideUpEnterQuickDelayed opacity-0 transition-all ease-in-out delay-50 hover:-translate-y-1 hover:translate-x-10 hover:scale-11">
                             I am a Computer Science student in my 3rd year of studies at York University. <br className="hidden sm:inline" />
                         </h2>
@@ -57,7 +59,9 @@ export default function Bio() {
                             Currently looking for an internship.
                         </h2>
                     </div>
-                </motion.div>
+            </motion.div>
+        </div>
+
             </>
     )
 }
