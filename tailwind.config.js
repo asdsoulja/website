@@ -23,6 +23,10 @@ module.exports = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        scale:{
+          175: '1.75',
+          400: '4.00',
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -79,6 +83,26 @@ module.exports = {
             transform: "translateY(0px)",
           },
         },
+        slideUpEnterDelayed: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(20px)",
+          },
+          "100%": {
+            opacity: 100,
+            transform: "translateY(-0px)",
+          },
+        },
+        slideUpEnterDelayed2: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(20px)",
+          },
+          "100%": {
+            opacity: 100,
+            transform: "translateY(-25px)",
+          },
+        },
         slideLeftEnter: {
           "0%": {
             opacity: 0,
@@ -97,6 +121,17 @@ module.exports = {
           "100%": {
             opacity: 100,
             transform: "translateX(0px)",
+          },
+        },
+        slideRightEnterDelayed: {
+          "0%": {
+            opacity: 0,
+            transform: "translateX(-1000px)",
+            transform: "translateY(0px)"
+          },
+          "100%": {
+            opacity: 100,
+            transform: "translateX(850px)",
           },
         },
         slideDownEnter: {
@@ -296,7 +331,10 @@ module.exports = {
         slideDownEnterQuick: "slideDownEnter 1s ease-in-out",
         slideLeftEnterQuick: "slideLeftEnter 1s ease-in-out",
         slideRightEnterQuick: "slideRightEnter 1s ease-in-out",
-        slideAwayUp: "slideAwayUp 10s 1 normal forwards",
+        slideAwayUp: "slideAwayUp 6s 1 normal forwards",
+        slideUpEnterQuickDelayed: "slideUpEnterDelayed 1s 3s normal forwards",
+        slideUpEnterQuickDelayed2: "slideUpEnterDelayed2 1s 5s normal forwards",
+        slideRightEnterQuickDelayed: "slideRightEnterDelayed 1s 3s normal forwards",
         "progress": 'progress 1s linear infinite',
         "three-bounce": 'three-bounce 1s ease-in-out infinite',
         "circle": 'circle 2s ease-in-out infinite',

@@ -30,10 +30,10 @@ export default function WelcomeText() {
             <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl transition ease-in-out delay-50 hover:-translate-y-1 hover:-translate-x-10 hover:scale-110 animate-slideRightEnter1s">
             Hello! <br className="hidden sm:inline" />
             </h1>
-            <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl transition ease-in-out delay-50 hover:-translate-y-1 hover:translate-x-10 hover:scale-110 animate-slideLeftEnter1s">
+            <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl transition ease-in-out delay-50 hover:-translate-y-1 hover:translate-x-10 hover:scale-110 animate-slideLeftEnter1s hover:-skew-y-1">
             My name is Dmitrii.
             </h1>
-            <div className="max-w-[700px] text-lg text-muted-foreground sm:text-xl transition ease-in-out delay-50 hover:scale-150 hover:translate-x-10 hover:text-slate-600 animate-slideUpEnter1s">
+            <div className="max-w-[700px] text-lg text-muted-foreground sm:text-xl transition ease-in-out delay-50 hover:scale-150 hover:translate-x-10 hover:text-slate-600 animate-slideUpEnter1s hover:skew-y-1 hover:skew-x-1">
             <Welcome />
             </div>
         </div>
