@@ -154,6 +154,13 @@ module.exports = {
             transform: "translateY(600px)",
           },
         },
+        shake: {
+          "0%, 100%": {
+          },
+          "50": {
+            transform: "translateX(50px)translateY(30px)rotate(90deg)"
+          },
+        },
         progress: {
           '0%, 60%': {
             transform: 'translateY(0px)'
@@ -185,12 +192,12 @@ module.exports = {
         // rotate two dots
         "rotate-in": {
           '0%, 100%': {
-            transform: 'scale(2)',
+            transform: 'scale(1)',
             opacity: 1
           },
           '50%': {
-            transform: 'scale(1)',
-            opacity: 0.5
+            transform: 'scale(1.04)',
+            opacity: 0.9
           },
         },
         "rotate-out": {
@@ -335,10 +342,11 @@ module.exports = {
         slideUpEnterQuickDelayed: "slideUpEnterDelayed 1s 3s normal forwards",
         slideUpEnterQuickDelayed2: "slideUpEnterDelayed2 1s 5s normal forwards",
         slideRightEnterQuickDelayed: "slideRightEnterDelayed 1s 3s normal forwards",
+        shake: "shake 1s linear infinite",
         "progress": 'progress 1s linear infinite',
         "three-bounce": 'three-bounce 1s ease-in-out infinite',
         "circle": 'circle 2s ease-in-out infinite',
-        "rotate-in": 'rotate-in 2s ease-in-out infinite',
+        "rotate-in": 'rotate-in 0.2s ease-in-out infinite',
         "rotate-out": 'rotate-out 2s ease-in-out infinite',
         "square-fill": 'square-fill 2s ease-in-out infinite',
         "square-fill-in": 'square-fill-in 2s ease-in-out infinite',

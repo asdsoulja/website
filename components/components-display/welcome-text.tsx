@@ -2,8 +2,7 @@
 
 
 import { motion } from "framer-motion";
-import Feedback from "./welcomeToMyWebsite";
-import Welcome from "./welcomeToMyWebsite";
+import Welcome from "../index-components/welcomeToMyWebsite";
 
 export default function WelcomeText() {
   return (
@@ -19,7 +18,7 @@ export default function WelcomeText() {
         borderRadius: ["50%", "50%", "50%", "50%", "50%"]
       }}
       transition={{
-        duration: 10,
+        duration: 5,
         ease: "easeInOut",
         times: [0, 0.2, 0.5, 0.8, 1],
         repeat: Infinity,

@@ -4,12 +4,12 @@ import { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-import { SiteHeader } from "@/components/site-header"
-import { ThemeProvider } from "@/components/theme-provider"
+import { SiteHeader } from "@/components/site-layout/site-header"
+import { ThemeProvider } from "@/components/site-layout/theme-provider"
 import { useState, useEffect } from "react";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
-import { Layout } from "@/components/layout"
+import { Layout } from "@/components/site-layout/layout"
 
 export const metadata: Metadata = {
   title: {
